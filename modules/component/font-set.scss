@@ -1,0 +1,30 @@
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    color: white;
+
+    &--black {
+        color: black;
+    }
+}
+
+.text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    &--14px {
+        font-size: 14px;
+    }
+
+    &--col-white {
+        color: white;
+    }
+    
+    &--tx-al{
+        text-align: center;
+    }
+}

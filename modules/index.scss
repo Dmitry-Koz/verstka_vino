@@ -1,15 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    bo
+    
+    a {
+        text-decoration: none;
+    }
 }
 
-.main-wrapper{
+.header {
+    width: 100%;
+}
+
+.main-wrapper {
     max-width: 1920px;
-    display: block;
 }
 
-.start-wrapper{
-    background-image: url(../img/bgc.png);
-    width: 100vw;
-    height: 100vh;
+
+.start {
+    &-wrapper {
+        background-image: url(../img/bgc.png);
+        padding-top: 30px;
+        height: 100vh;
+    }
+
+    &-contact {
+        font-family: Montserrat;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        a {
+            color: white;
+        }
+    }
+
+    &-menu {
+        display: flex;
+        margin-top: 20px;
+
+        &-link {
+            color: white;
+            width: calc(100% / 4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 13px 0;
+            border: 1px solid white;
+
+            &:first-child {
+                border-left: none;
+            }
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: space-between;
+        max-width: 436px;
+        width: 100%;
+        margin-bottom: 150px;
+    }
 }
+
+
+.two {
+    &-wrapper {
+        background-color: black;
+        padding: 100px 0;
+    }
+
+    &-border {
+        border: 3px solid white;
+        padding: 60px 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            &::after {
+                content: '';
+                position: absolute;
+                right: 50%;
+                bottom: -40px;
+                transform: translate(50%,0);
+                display: block;
+                background-color: white;
+                height: 1px;
+                width: 160px;
+            }
+            margin-bottom: 80px;
+            position: relative;
+        }
+        .text {
+            max-width: 773px;
+            margin-bottom: 50px;
+        }
+    }
+
+}
+
+
